@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="UTF-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" href="https://ejunds.github.io/mifn-iptv/style.css">
-		</head>
-			<body>
-				<center>
-					<div id="stream">
-						<iframe src="https://mifntechnology.github.io/siaranMy/channels/Tv3/Tv3_index.html" width="950" height="700" frameborder="0" allowfullscreen="allowfullscreen" scrolling="no" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; idle-detection">
-						</iframe>
-					</div>
-		        </center>
-			</body>
-    </html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV3 Player</title>
+    <style>
+        /* CSS untuk memastikan 'autofit' */
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Elak scrollbar */
+            background-color: #000;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Buang border iframe */
+        }
+    </style>
+</head>
+<body>
+    <!-- Iframe ini sekarang akan autofit. Atribut width dan height telah dibuang. -->
+    <iframe 
+        src="https://mifntechnology.github.io/siaranMy/channels/Tv3/Tv3_index.html" 
+        allowfullscreen="allowfullscreen" 
+        scrolling="no" 
+        allow="autoplay; fullscreen">
+    </iframe>
+</body>
+</html>
